@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Pro: Wall Edition</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="ui-container">
+        <div class="stats">BALL: <span id="score">0</span></div>
+        <div class="controls">
+            <select id="speedLevel">
+                <option value="250">Juda Sekin (Oson)</option>
+                <option value="120" selected>O'rtacha (Normal)</option>
+                <option value="60">Juda Qiyin (Pro)</option>
+            </select>
+            <button onclick="startGame()">O'yinni Boshlash</button>
+        </div>
+    </div>
+
+    <div id="game-area">
+        <canvas id="snakeGame" width="400" height="400"></canvas>
+        <div id="game-over">
+            <h1 style="color: #ff4d4d; font-size: 40px;">O'YIN TUGADI!</h1>
+            <p id="final-score" style="font-size: 20px;"></p>
+            <button onclick="startGame()">Qayta Urinish</button>
+        </div>
+    </div>
+
+    <script src="./script.js">
+        
+    </script>
+</body>
+</html>
